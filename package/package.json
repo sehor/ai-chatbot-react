@@ -1,0 +1,38 @@
+{
+  "name": "ai-chatbot-component",
+  "version": "1.0.0",
+  "description": "A reusable AI chatbot component that can be used in React and non-React projects",
+  "type": "module",
+  "main": "ai-chatbot/cjs/index.js",
+  "module": "ai-chatbot/esm/index.js",
+  "types": "ai-chatbot/types/index.d.ts",
+  "files": [
+    "ai-chatbot"
+  ],
+  "scripts": {
+    "clean": "rimraf ai-chatbot",
+    "build": "npm run clean && rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "ai": "^3.4.33",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.8.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
